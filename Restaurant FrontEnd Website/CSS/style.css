@@ -1,0 +1,162 @@
+/* For chooding color template = colorhunt.com */
+:root{
+    --yellow: #F8DE22;
+    --red:#900C3F;
+    --pink:#C70039;
+    --orange: #F94C10;
+}
+
+body, h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing{
+    background-image: url('../media/bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: whitesmoke;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+    min-width: 100px;
+}
+
+header{
+    display: flex;
+    padding: 1em;
+    row-gap: 1em;
+    flex-wrap: wrap;
+    background-color: #900C3F;
+}
+
+#logo{
+    flex:3;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+nav{
+    flex:2;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+}
+
+nav a{
+    flex:1;
+}
+nav a:hover{
+    color: #ffffff;
+}
+
+header a i, nav a i{
+    margin-right: .5em;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    text-align: left;
+    margin-top: 6em;
+    background-color: #900C3F;
+    background-position: center;
+}
+
+.tagline1{
+    color: var(--yellow);
+    font-size: 2.5em;
+    font-weight: bolder;
+    border-radius: 0.5cm;
+}
+
+.tagline2{
+    font-weight: bolder;
+    border-radius: 0.5cm;
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    color: var(--red);
+    background-color: var(--yellow);
+    padding: .7em;
+    border: 1px solid white;
+}
+
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    background: linear-gradient(to right, #febdd6, #900C3F);
+}
+
+#menuheading, #locheading{
+    background: linear-gradient(to right, #ffffff, #F8DE22);
+    font-size: 2em;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+
+.menu th{
+    color: rgb(255, 255, 255);
+    background-color: #900C3F;
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.maincourse{
+    grid-row: span 2;;
+}
+
+.locations{
+    display: flex;
+    /*grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); */
+    background: linear-gradient(to right, #febdd6, #900C3F);
+    flex-wrap: wrap;
+}
+
+.locations h2{
+    color: #ffffff;
+    background-color: #900C3F;
+    margin-bottom: .8em;
+}
+
+.locations div{
+    flex:1;
+    padding: 1em;
+    min-width: 300px;
+}
+
+footer{
+    background-color: var(--red);
+    color: #F8DE22;
+    padding: .25em 1em;
+}
